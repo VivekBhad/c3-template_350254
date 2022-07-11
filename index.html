@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="navbar">
+      <h2>Hotel App</h2>
+      <input type="search" name="" id="query" oninput="query()" placeholder="Serch">
+      <div id="login"><a href="login.html">Login</a></div>
+      <div id="signup"><a href="signup.html">Signup</a></div>
+      <!-- the search-box id:- "query"
+ - the log-in and sign-up link will have ids:- "login" and "signup" -->
+    </div>
+    <div id="sorting">
+      <select name="" id="sort_lth">
+        <option value="low">low</option>
+        <option value="high">high</option>
+      </select>
+      <select name="" id="sort_htl">
+        <option value="">high</option>
+        <option value="">low</option>
+      </select>
+    <select name="filter_ac" id="">
+<option value=""> Ac hotels </option>
+    </select>
+    <select name="" id="filter_nonac">
+     <option value=""> Non Ac hotels </option></select>
+      <!-- sort by price low to high Id:- "sort_lth"
+ - sort by price high to low Id:- "sort_htl"
+ - Filter Ac hotels Id:- "filter_ac"
+ - Filter Non Ac hotels Id:- "filter_nonac" -->
+    </div>
+    <div id="hotels-list">
+      <!-- - Append all fetched hotels inside div with id:- "hotels_list"
+ - Every hotel card will have id:-  "hotel"
+ - The book now button will have class as "book" -->
+    </div>
+  </body>
+  <script src="scripts/index.js"></script>
+</html>
